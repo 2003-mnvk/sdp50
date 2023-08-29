@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritionist Appointment</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        select,
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nutritionist Appointment</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="patientName">Your Name:</label>
+                <input type="text" id="patientName" name="patientName" required>
+            </div>
+            <div class="form-group">
+                <label for="nutritionist">Select Nutritionist:</label>
+                <select id="nutritionist" name="nutritionist" required>
+                    <option value="Nutritionist Smith">Nutritionist Smith</option>
+                    <option value="Nutritionist Johnson">Nutritionist Johnson</option>
+                    <option value="Nutritionist Brown">Nutritionist Brown</option>
+                    <!-- Add more nutritionists as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="appointmentDate">Preferred Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentTime">Preferred Time:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime" required>
+            </div>
+            <button type="submit">Request Appointment</button>
+        </form>
+    </div>
+</body>
+</html>

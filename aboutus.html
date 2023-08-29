@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="aboutuscss.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header id="nav-menu" aria-label="navigation bar">
+        <div class="container">
+          <div class="nav-start">
+            <a class="logo" href="/">
+              <img src="images/pic1.png" width="35" height="35" alt="Inc Logo" />
+            </a>
+            <nav class="menu">
+              <ul class="menu-bar">
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                    Nutrition
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="bmi.html">
+                          <img src="./assets/icons/botd.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">BMI Calculation</span>
+                            <p>Know your BMI here</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#featured-streams">
+                          <img src="./assets/icons/fs.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Diet Plan</span>
+                            <p>Know your personalized Diet Plan</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#creative-feed">
+                          <img src="./assets/icons/cf.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Store</span>
+                            <p>Visit our store for your diet plan</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+    
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                    Consultancy
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown2" class="dropdown">
+                    <ul role="menu">
+                      <li>
+                        <span class="dropdown-link-title">Browse Categories</span>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#branding">Doctor</a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations">Nutritionist</a>
+                      </li>
+                    </ul>
+                    <ul role="menu">
+                      <li>
+                        <span class="dropdown-link-title">Know here</span>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#mac-windows">Our expert doctors</a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#linux">more</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="nav-link" href="aboutus.html">About</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="nav-end">
+            <div class="right-container">
+              <form class="search" role="search">
+                <input type="search" name="search" placeholder="Search" />
+                <i class="bx bx-search" aria-hidden="true"></i>
+              </form>
+              <a href="#profile">
+                <img src="/assets/images/user.jpg" width="30" height="30" alt="user image" />
+              </a>
+              <a class="btn btn-primary" href="login.html">Login/Register</a>
+            </div>
+    
+            <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-menu" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <script src="script.js"></script>
+<marquee direction="left" behavior="scroll" scrollamount="15"><span class="marquee-text">Welcome to NutroSpa your personalized website for your health</span></marquee>
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eaboutus1.svg">
+          <div class="allText aboveText">
+            <p class="text-blk headingText">
+              Our Mission
+            </p>
+            <p class="text-blk subHeadingText">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p class="text-blk description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut.
+            </p>
+            <button class="explore">
+              Explore
+            </button>
+          </div>
+        </div>
+        <div class="responsive-container-block Container bottomContainer">
+          <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/xpraup2.svg">
+          <div class="allText bottomText">
+            <p class="text-blk headingText">
+              Our Vision
+            </p>
+            <p class="text-blk subHeadingText">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p class="text-blk description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut.
+            </p>
+            <button class="explore">
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>

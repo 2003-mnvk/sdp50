@@ -1,0 +1,130 @@
+.testimonials {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f5f5f5; /* Light gray background color */
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.testimonial-photo {
+    width: 100px; /* Set the width and height to create a circle */
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin: 0 auto 10px; /* Centers the circular image and adds spacing below */
+}
+
+.testimonial-photo img {
+    width: 100%;
+    height: auto;
+}
+.service-highlights {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.service-highlight {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-highlight img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* Style the newsletter signup form */
+.newsletter-signup {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f5f5f5; /* Light gray background color */
+}
+
+.newsletter-signup h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.signup-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.signup-form input[type="name"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.signup-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #555;
+}
+
+/* Style the wellness resources section */
+.wellness-resources {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f5f5f5; /* Light gray background color */
+    max-width: 200px; /* Maximum width for the download section */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.resource-item {
+    margin: 10px; /* Smaller margin */
+    max-width: 200px; /* Maximum width */
+    max-height: 100px; /* Maximum height */
+    overflow: hidden; /* Hide content that exceeds the max height */
+}
+
+.resource-item a {
+    display: block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.resource-item a:hover {
+    background-color: #555;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Sample Diet Plan</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        /* Style for meal sections */
+        .meal-section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .meal-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .meal-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Style for individual food items */
+        .food-item {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="nav-menu" aria-label="navigation bar">
+        <div class="container">
+          <div class="nav-start">
+            <a class="logo" href="/">
+              <img src="images/pic1.png" width="35" height="35" alt="Inc Logo" />
+            </a>
+            <nav class="menu">
+              <ul class="menu-bar">
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                    Nutrition
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="bmi.html">
+                          <img src="./assets/icons/botd.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">BMI Calculation</span>
+                            <p>Know your BMI here</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="dietplan.html">
+                          <img src="./assets/icons/fs.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Diet Plan</span>
+                            <p>Know your personalized Diet Plan</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#creative-feed">
+                          <img src="./assets/icons/cf.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Store</span>
+                            <p>Visit our store for your diet plan</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                    Consultancy
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown2" class="dropdown">
+                    <ul role="menu">
+                      <li>
+                        <span class="dropdown-link-title">Browse Categories</span>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#branding">Doctor</a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations">Nutritionist</a>
+                      </li>
+                    </ul>
+                    <ul role="menu">
+                      <li>
+                        <span class="dropdown-link-title">Know here</span>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#mac-windows">Our expert doctors</a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#linux">more</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="nav-link" href="aboutus.html">About</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="nav-end">
+            <div class="right-container">
+              <form class="search" role="search">
+                <input type="search" name="search" placeholder="Search" />
+                <i class="bx bx-search" aria-hidden="true"></i>
+              </form>
+              <a href="#profile">
+                <img src="/assets/images/user.jpg" width="30" height="30" alt="user image" />
+              </a>
+              <a class="btn btn-primary" href="login.html">Login/Register</a>
+            </div>
+    
+            <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-menu" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <script src="script.js"></script>
+    <h1>Sample Diet Plan</h1>
+
+    <!-- Breakfast -->
+    <div class="meal-section">
+        <h2 class="meal-name">Breakfast</h2>
+        <p class="meal-description">A healthy start to your day!</p>
+        <ul>
+            <li class="food-item">Scrambled eggs</li>
+            <li class="food-item">Whole wheat toast</li>
+            <li class="food-item">Fresh fruit salad</li>
+            <li class="food-item">Low-fat yogurt</li>
+        </ul>
+    </div>
+
+    <!-- Lunch -->
+    <div class="meal-section">
+        <h2 class="meal-name">Lunch</h2>
+        <p class="meal-description">Fuel up for the afternoon!</p>
+        <ul>
+            <li class="food-item">Grilled chicken breast</li>
+            <li class="food-item">Brown rice</li>
+            <li class="food-item">Steamed vegetables</li>
+            <li class="food-item">Mixed greens salad</li>
+        </ul>
+    </div>
+
+    <!-- Dinner -->
+    <div class="meal-section">
+        <h2 class="meal-name">Dinner</h2>
+        <p class="meal-description">A satisfying evening meal!</p>
+        <ul>
+            <li class="food-item">Salmon fillet</li>
+            <li class="food-item">Quinoa</li>
+            <li class="food-item">Roasted asparagus</li>
+            <li class="food-item">Caesar salad</li>
+        </ul>
+    </div>
+
+    <!-- Snacks -->
+    <div class="meal-section">
+        <h2 class="meal-name">Snacks</h2>
+        <p class="meal-description">Healthy snacks to keep you energized!</p>
+        <ul>
+            <li class="food-item">Almonds</li>
+            <li class="food-item">Greek yogurt</li>
+            <li class="food-item">Carrot sticks</li>
+            <li class="food-item">Hummus</li>
+        </ul>
+    </div>
+
+    <!-- Footer or additional content here -->
+</body>
+</html>

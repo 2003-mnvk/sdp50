@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="testimonials.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>NutroSpa</title>
+  <style>
+    /* Style for the slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Style for individual slides */
+    .mySlides {
+        display: none;
+    }
+
+    /* Style for the previous and next buttons */
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        background-color: rgba(0,0,0,0.3);
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Position the previous button to the left */
+    .prev {
+        left: 0;
+    }
+
+    /* Position the next button to the right */
+    .next {
+        right: 0;
+    }
+
+    /* Style for the image captions */
+    .caption {
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        padding: 8px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+    }
+     /* Style for the marquee container */
+     .marquee-container {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Style for the marquee text */
+        .marquee-text {
+            font-size: 14px;
+            font-weight: bold;
+        }
+      /* CSS for the footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.footer-info {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-info h3 {
+    font-size: 1.2em;
+}
+
+.footer-social {
+    margin: 0 20px;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-social ul li a img {
+    max-width: 30px;
+    height: auto;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8em;
+}
+
+/* Add some responsive styles */
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info,
+    .footer-social {
+        margin: 10px 0;
+        text-align: center;
+    }
+    h1{
+      margin-top: 50px;
+      color: aqua;
+    }
+  
+}
+
+</style>
+</head>
+
+<body>
+  <header id="nav-menu" aria-label="navigation bar">
+    <div class="container">
+      <div class="nav-start">
+        <a class="logo" href="/">
+          <img src="images/pic1.png" width="35" height="35" alt="Inc Logo" />
+        </a>
+        <nav class="menu">
+          <ul class="menu-bar">
+            <li>
+              <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                Nutrition
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown1" class="dropdown">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="bmi.html">
+
+                      <img src="https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/calculator/life-planning-tools/bmi-calculator/banner-image-bmi.png" width="35" height="35" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">BMI Calculation</span>
+                        <p>Know your BMI here, and stay Healthy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <img src="https://shorturl.at/abgsx" width="35" height="35" class="icon" />
+                      <div>
+                        <a href="dietplan.html"><span class="dropdown-link-title">Diet Plan</span></a>
+                        <p>Know your personalized Diet Plan</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <img src="https://static.vecteezy.com/system/resources/previews/004/999/463/original/shopping-cart-icon-illustration-free-vector.jpg" width="35" height="35" class="icon" />
+                     
+                      <div>
+                        <a href="store.html"><span class="dropdown-link-title">Store</span></a>
+                        <p>Visit our store for your diet plan</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+            <li>
+              <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                Consultancy
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown2" class="dropdown">
+                <ul role="menu">
+                  <li>
+                    <span class="dropdown-link-title">Browse Categories</span>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="doctor.html">Doctor</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="nutro.html">Nutritionist</a>
+                  </li>
+                </ul>
+                <ul role="menu">
+                  <li>
+                    <span class="dropdown-link-title">Know here</span>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#mac-windows">Our expert doctors</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#linux">more</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="nav-link" href="aboutus.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-end">
+        <div class="right-container">
+          <form class="search" role="search">
+            <input type="search" name="search" placeholder="Search" />
+            <i class="bx bx-search" aria-hidden="true"></i>
+          </form>
+          <a href="#profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHdD1Zgm522dOopQyqQHigiOBJjiMHlYhhf9FY3A5Jw&s" width="30" height="30" alt="user image" />
+          </a>
+          <a class="btn btn-primary" href="login.html">Login/Register</a>
+        </div>
+
+        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <script src="script.js"></script>
+<marquee direction="left" behavior="scroll" scrollamount="15"><span class="marquee-text">**This website is under maintanence! Please stay with us! we will bounce back to you shortly!**</span></marquee>
+  <div class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="mySlides">
+        <img src="images/pics1.jpg" style="width:100%">
+        
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides">
+        <img src="images/pics2.jpg" style="width:100%">
+        
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides">
+        <img src="images/pics3.jpg" style="width:100%">
+        
+    </div>
+
+    <!-- Previous and Next buttons -->
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+</div>
+
+<script>
+    let slideIndex = 1;
+    
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Initially, show the first slide
+    showSlides(slideIndex);
+</script>
+<center><h1 style="color: #8fb4c4;">Welcome to NutroSpa</h1></center>
+
+        <p style="font-size: 18px; color:#63965d; text-align: center; padding: 20px; font-weight: bold; line-height: 1.5;">
+          Welcome to NutroSpa, your ultimate destination for holistic wellness and self-care. At NutroSpa, we are dedicated to helping you nourish your body, mind, and soul, allowing you to achieve a state of well-being and balance like never before.
+      </p>
+      <div class="video-container">
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/krIgKr3IC7s?si=whHimWk3aECbXSJF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>   
+       <p class="video-description" style="font-size: 18px;color: #333;text-align: center;padding: 20px;font-weight: bold;line-height: 1.5;">
+          Discover the transformative power of holistic wellness and self-care at NutroSpa. Our mission is to help you nourish your body, mind, and soul, allowing you to achieve a state of well-being and balance like never before.
+      </p>
+    </div>
+   
+    <div class="testimonials">
+      <h1>Testimonials</h1>
+      <div class="testimonial">
+          <!-- Circular photo -->
+          
+          <div class="testimonial-photo">
+              <img src="images/jon-doe.jpg" alt="Jane Doe">
+          </div>
+          <p>"I've never felt better in my life! NutroSpa's services are truly amazing."</p>
+          <p class="testimonial-author">- Jon Doe</p>
+      </div>
+      <div class="testimonial">
+        <!-- Circular photo -->
+        <div class="testimonial-photo">
+            <img src="images/sarah.jpg" alt="Jane Doe">
+        </div>
+        <p>"The staff at NutroSpa is incredibly knowledgeable and caring. I highly recommend their services."</p>
+        <p class="testimonial-author">- Sarah Johnson</p>
+    </div>
+  
+      <!-- Add more testimonials below -->
+  </div>
+    <!-- Service Highlights section -->
+    <div class="service-highlights">
+      <h2>Our Services</h2>
+      <div class="service-highlight">
+          <img src="images/massage.jpg" alt="Service 1">
+          <h3>Massage Therapy</h3>
+          <p>Relax and rejuvenate with our expert massage therapists.</p>
+      </div>
+      <div class="service-highlight">
+          <img src="images/yoga.jpg" alt="Service 2">
+          <h3>Yoga Classes</h3>
+          <p>Improve flexibility and find inner peace through yoga.</p>
+      </div>
+      <div class="service-highlight">
+          <img src="images/nutri.jpg" alt="Service 3">
+          <h3>Nutritional Counseling</h3>
+          <p>Get personalized nutrition guidance for a healthier you.</p>
+      </div>
+      <!-- Add more service highlights as needed -->
+  </div>
+
+  <!-- Newsletter Signup section -->
+  <div class="newsletter-signup">
+    <h2>Subscribe to Our Newsletter</h2>
+    <div class="signup-form">
+        <form action="YOUR_NEWSLETTER_ENDPOINT" method="POST">
+            <label for="email">Name:</label>
+            <input type="name" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+<!-- Wellness Resources section -->
+<div class="wellness-resources">
+  <h2>Wellness Resources</h2>
+  <div class="resource-item">
+      <a href="ebook1.pdf" download>Download Ebook 1</a>
+  </div>
+  <div class="resource-item">
+      <a href="guide1.pdf" download>Download Guide 1</a>
+  </div>
+  <!-- Add more resource items below -->
+</div>
+
+
+      <footer>
+  <div class="footer-content">
+      <div class="footer-logo">
+          <img src="images/pic1.png" alt="My Logo">
+      </div>
+      <div class="footer-info">
+          <h3>Contact Information</h3>
+          <p>Email: nutrospa@gmail.com</p>
+          <p>Phone: 7794097919</p>
+          <p>Address: 123 Main Street, vijayawda, A.P</p>
+      </div>
+      <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+              <li><a href="https://www.facebook.com/"><img src="images/fb.png" alt="Facebook"></a></li>
+              <li><a href="https://twitter.com/home?lang=en"><img src="images/twitter.png" alt="Twitter"></a></li>
+              <li><a href="https://www.instagram.com/"><img src="images/insta.jpg" alt="Instagram"></a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2023 NutroSpa</p>
+  </div>
+</footer>
+
+</body>
+
+</html>
